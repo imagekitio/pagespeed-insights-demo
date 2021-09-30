@@ -1,0 +1,20 @@
+block default
+  section.uk-section.uk-section-small
+    div.uk-container
+      div.uk-grid-medium.uk-child-width-1-1(uk-grid)
+
+        div.uk-text-center
+          
+            ul.uk-breadcrumb.uk-flex-center.uk-margin-remove
+              li: a(href="#") Home
+              li: a(href= "#")= "Breadcrumb 1"
+              li: a(href= "#")= "Breadcrumb 2"
+              
+              li: span= "Product Listing"
+          
+            h1.uk-margin-small-top.uk-margin-remove-bottom= "Product Listing"
+          
+            div.uk-text-meta.uk-margin-xsmall-top 15 items
+
+        div
+          block pages

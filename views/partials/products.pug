@@ -1,0 +1,40 @@
+div.uk-grid-medium.uk-child-width-1-1.uk-grid
+
+  //- Items
+  div
+    div.uk-card.uk-card-default.uk-card-small.tm-ignore-container
+      div#products.uk-grid-collapse.uk-child-width-1-1.uk-grid
+
+        //- Settings
+        div.uk-card-header
+          div.uk-grid-small.uk-flex-middle.uk-grid
+
+            //- Sorting
+            div(class="uk-width-1-1 " +
+                      "uk-width-expand@s " +
+                      "uk-flex " +
+                      "uk-flex-center " +
+                      "uk-flex-left@s " +
+                      "uk-text-small")
+
+              span.uk-margin-small-right.uk-text-muted Sort by:
+
+              ul.uk-subnav.uk-margin-remove
+                li.uk-active.uk-padding-remove
+                  a.uk-text-lowercase(href="#") relevant
+                    +icon("chevron-down", ".5")(class="uk-margin-xsmall-left")
+                li
+                  a.uk-text-lowercase(href="#") price
+                li
+                  a.uk-text-lowercase(href="#") newest
+
+
+        //- Items
+        div
+          div(class="uk-grid uk-grid-collapse " +
+                    "uk-child-width-1-2 " +
+                    "tm-products-grid " +
+                    "js-products-grid"
+              uk-grid)
+            each product in products
+              +product(product)

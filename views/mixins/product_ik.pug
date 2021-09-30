@@ -1,0 +1,28 @@
+mixin product_ik(product)
+
+  article.tm-product-card
+    
+    //- Media
+    div.tm-product-card-media
+      div.tm-ratio.tm-ratio-4-3
+        a.tm-media-box(href= product.href)
+
+          //- Image
+          figure.tm-media-box-wrap
+            if product.image
+              img(src= product.image.originalIK)
+            else
+              +icon("image", "3")(class="uk-text-muted")
+
+    //- Body
+    div.tm-product-card-body
+
+      //- Info
+      div.tm-product-card-info
+
+        //- Type
+        div.uk-text-meta.uk-margin-xsmall-bottom= product.type
+
+        //- Title
+        h3.tm-product-card-title
+          a.uk-link-heading(href= product.href)= product.name

@@ -1,0 +1,11 @@
+.uk-container {
+    max-width: 880px;
+}
+
+.tm-product-card-media {
+    /* width: 100%; */
+}
+
+img:not([src]) {
+    visibility: visible;
+}

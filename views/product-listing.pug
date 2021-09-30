@@ -1,0 +1,27 @@
+include ./mixins/product
+include ./mixins/product_ik
+include ./mixins/product_optimized
+include ./mixins/product_responsive
+include ./mixins/product_resize
+include ./mixins/product_lazyload
+include ./mixins/icon
+
+html
+  head
+    link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500")
+    link(rel="stylesheet" href="styles/style.css")
+    link(rel="stylesheet" href="styles/style_overrides.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= "Product Listing Page - High-quality image display demo - ImageKit"
+  body
+    include ./partials/header
+    include ./partials/heading
+    
+    div.uk-container
+        div.uk-grid-medium.uk-grid.uk-child-1-1.uk-grid-stack
+            //- Filters
+            //- include ./partials/filters
+
+            //- Content
+            div.uk-width-expand
+                include ./partials/products

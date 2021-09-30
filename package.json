@@ -1,0 +1,23 @@
+{
+  "name": "high-quality-images-demo",
+  "version": "1.0.0",
+  "description": "To demonstrate display of high-quality images on websites across devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rn4391/high-quality-images-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rn4391/high-quality-images-demo/issues"
+  },
+  "homepage": "https://github.com/rn4391/high-quality-images-demo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}
